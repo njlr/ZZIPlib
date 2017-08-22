@@ -82,7 +82,7 @@
 /* #undef ZZIP_HAVE_WINNT_H */
 
 /* Define to 1 if you have the <zlib.h> header file. */
-// #define ZZIP_HAVE_ZLIB_H 1
+#define ZZIP_HAVE_ZLIB_H 1
 
 /* whether the system defaults to 32bit off_t but can do 64bit when requested */
 /* #undef ZZIP_LARGEFILE_SENSITIVE */

@@ -1,3 +1,5 @@
+include_defs('//BUCKAROO_DEPS')
+
 macos_headers = subdir_glob([
   ('cmake-generated/macosx-x86_64/zzip', '**/*.h'),
 ]);
@@ -15,6 +17,7 @@ cxx_library(
   srcs = glob([
     'zzip/**/*.c',
   ]),
+  deps = BUCKAROO_DEPS,
   visibility = [
     'PUBLIC',
   ],

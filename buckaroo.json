@@ -1,0 +1,6 @@
+{
+  "name": "ZZIPlib",
+  "dependencies": {
+    "madler/zlib": "1.2.11"
+  }
+}

@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'zzipself',
+  srcs = [
+    'zzipself.c',
+  ],
+  deps = [
+    '//:zzip',
+  ],
+)
+
+cxx_binary(
+  name = 'zzipsetstub',
+  srcs = [
+    'zzipsetstub.c',
+  ],
+  deps = [
+    '//:zzip',
+  ],
+)
