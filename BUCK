@@ -4,6 +4,11 @@ macos_headers = subdir_glob([
   ('cmake-generated/macosx-x86_64/zzip', '**/*.h'),
 ]);
 
+linux_headers = subdir_glob([
+  ('cmake-generated/linux-x86_64/zzip', '**/*.h'),
+]);
+
+
 cxx_library(
   name = 'zzip',
   header_namespace = 'zzip',
@@ -12,6 +17,7 @@ cxx_library(
   ]),
   exported_platform_headers = [
     ('default', macos_headers),
+    ('^linux.*', linux_headers),
     ('^macos.*', macos_headers),
   ],
   srcs = glob([
